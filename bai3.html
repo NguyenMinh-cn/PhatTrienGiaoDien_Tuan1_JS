@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var i;
+        var Dolphins_score  = [ 96, 108, 110];
+        var Koalas_score  = [ 88,91,110];
+        var sum = 0;
+        for( var i = 0; i < Dolphins_score.length; i++ ){
+            sum += Dolphins_score[i]; //don't forget to add the base
+        }
+        var avg_dolphins = sum/Dolphins_score.length;
+
+        sum = 0;
+        for( var i = 0; i < Koalas_score.length; i++ ){
+            sum += Koalas_score[i]; //don't forget to add the base
+        }
+        var avg_koalas = sum/Koalas_score.length;
+        
+        if (avg_dolphins > avg_koalas ) {
+            console.log("Dolphins score: "+avg_dolphins.toFixed(2));
+            console.log("Koalas score: "+avg_koalas.toFixed(2));
+    
+            if (avg_dolphins >=100) {
+                console.log("Team wins  the trophy 1 is Dolphins!");
+            }else {
+                console.log("No team wins the trophy");
+            }
+        } else if (avg_dolphins = avg_koalas && avg_dolphins>=100 && avg_koalas>=100){
+            console.log("Dolphins score: "+avg_dolphins.toFixed(2));
+            console.log("Koalas score: "+avg_koalas.toFixed(2));
+            if (avg_dolphins >=100) {
+                console.log("Team wins  the trophy 2 is Dolphins!");
+            } else if (avg_koalas >=100) {
+                console.log("Team wins  the trophy 2 is Koalas!");
+            }else {
+                console.log("No team wins the trophy");
+            }
+
+        }else {
+            console.log("Dolphins score: "+avg_dolphins.toFixed(2));
+            console.log("Koalas score: "+avg_koalas.toFixed(2));
+            if (avg_koalas >=100) {
+                console.log("Team wins  the trophy 1 is Koalas!");
+            }else {
+                console.log("No team wins the trophy");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
